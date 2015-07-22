@@ -95,7 +95,7 @@ def get_file_contents(path):
 
 
 def calc_tf(sentence):
-	m = MeCab.Tagger ("--node-format=%m\s%f[0]\\n --eos-format='' ")#メカブを使う
+	m = MeCab.Tagger ("-Ochasen -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd/")#メカブを使う
 	# f = open(file_pass, 'r')#00000370.txtフィアルを開く
 	# doc=f.read()#ファイルの内容をdocにいれる
 	nobe = 0
